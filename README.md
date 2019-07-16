@@ -1,2 +1,2 @@
 # Activity in Dynamic Feature Module
-This project is an example of the usage of Dynamic Delivery. One of the common tasks is to start an Activity of Dynamic Delivery Module.
+One of the common tasks is to start an Activity of Dynamic Delivery Module. This project shows how to implement basic Activity and start it with Dynamic Delivery. 
