@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DynamicFeature</string>
+    <string name="title_login">Login</string>
+    <string name="title_registration">Registration</string>
+</resources>
