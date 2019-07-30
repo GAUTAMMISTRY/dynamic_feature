@@ -1,1 +1,1 @@
-include ':app', ':registration'
+include ':app', ':registration', ':fragment_module'

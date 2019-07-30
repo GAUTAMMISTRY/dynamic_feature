@@ -32,11 +32,13 @@ android {
         }
     }
 
-    dynamicFeatures = [":registration"]
+    dynamicFeatures = [":registration", ":fragment_module"]
 
     androidExtensions {
         experimental = true
     }
+
+
 }
 
 dependencies {

@@ -5,6 +5,7 @@ import android.graphics.Bitmap
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.fragment.app.Fragment
 import com.google.android.play.core.splitinstall.SplitInstallManager
 import com.google.android.play.core.splitinstall.SplitInstallManagerFactory
 import com.google.android.play.core.splitinstall.SplitInstallRequest
@@ -32,6 +33,16 @@ class MainActivity : AppCompatActivity() {
             } else {
                 Log.e(tag, "Registration feature is not installed")
             }
+        }
+
+        val fragment = Class.forName("com.kirill.dynamicfeature.fragment_module.MainFragment").newInstance()
+
+        if (fragment is Fragment) {
+            supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.fragmentHolder, fragment, "dynamic_fragment")
+                .addToBackStack("dynamic_fragment")
+                .commit()
         }
     }
 
